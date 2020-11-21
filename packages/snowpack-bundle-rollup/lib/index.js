@@ -19,11 +19,12 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 		entrypoints = '**/*.html',
 		assetsDir = '_assets/',
 		modulesDir = 'modules/',
-		baseUrl = snowpackConfig.buildOptions.baseUrl || '/',
 		minify = false,
 		keepBuildFiles = false,
 		modifyRollupOptions = (x) => x,
 	} = pluginOpts;
+
+	let baseUrl = snowpackConfig.buildOptions.baseUrl;
 
 	return {
 		name: 'snowpack-bundle-rollup',
