@@ -111,7 +111,7 @@ function plugin (opts: PluginOptions = {}): RollupPlugin {
 
 				let res = await cleanCSS.minify(
 					chunks.map((chunk) => ({
-						[chunk.id]: { styles: chunk.style, sourceMap: chunk.map.toString() },
+						[chunk.id]: { styles: chunk.style, sourceMap: chunk.map?.toString() },
 					}))
 				);
 
