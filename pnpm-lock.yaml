@@ -8,12 +8,12 @@ importers:
     dependencies:
       cheerio: 1.0.0-rc.3
     devDependencies:
-      '@intrnl/bundl': 0.1.15
+      '@intrnl/bundl': 0.1.16
       '@types/cheerio': 0.22.22
       '@types/node': 14.14.9
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.15
+      '@intrnl/bundl': ^0.1.16
       '@types/cheerio': ^0.22.22
       '@types/node': ^14.14.9
       cheerio: ^1.0.0-rc.3
@@ -26,12 +26,12 @@ importers:
       postcss: 8.1.8
       postcss-modules: 3.2.2
     devDependencies:
-      '@intrnl/bundl': 0.1.15
+      '@intrnl/bundl': 0.1.16
       '@types/clean-css': 4.2.2
       '@types/node': 14.14.9
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.15
+      '@intrnl/bundl': ^0.1.16
       '@rollup/pluginutils': ^4.1.0
       '@types/clean-css': ^4.2.2
       '@types/node': ^14.14.9
@@ -46,12 +46,12 @@ importers:
       serialize-javascript: 5.0.1
       terser: 5.5.0
     devDependencies:
-      '@intrnl/bundl': 0.1.15
+      '@intrnl/bundl': 0.1.16
       '@types/node': 14.14.9
       '@types/serialize-javascript': 4.0.0
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.15
+      '@intrnl/bundl': ^0.1.16
       '@intrnl/node-worker-pool': ^0.1.6
       '@types/node': ^14.14.9
       '@types/serialize-javascript': ^4.0.0
@@ -67,10 +67,10 @@ importers:
       rollup-plugin-postcss: 'link:../rollup-plugin-postcss'
       rollup-plugin-terser: 'link:../rollup-plugin-terser'
     devDependencies:
-      '@intrnl/bundl': 0.1.15
+      '@intrnl/bundl': 0.1.16
       snowpack: 2.17.1
     specifiers:
-      '@intrnl/bundl': ^0.1.15
+      '@intrnl/bundl': ^0.1.16
       cheerio: ^1.0.0-rc.3
       fast-glob: ^3.2.4
       rollup: ^2.33.3
@@ -98,7 +98,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-i6rgnR/YgPEQzZZnbTHHuZdlE8qyoBNalD6F+q4vAFlcMEcqmkoG+mPqJYJCo63qPf74+Y1UZsl3l6f7/RIkmA==
-  /@intrnl/bundl/0.1.15:
+  /@intrnl/bundl/0.1.16:
     dependencies:
       '@intrnl/rollup-plugin-esbuild': 0.4.3_esbuild@0.8.11+rollup@2.33.3
       esbuild: 0.8.11
@@ -108,7 +108,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-ILYdaYcFm7ZBuYoHadvsP602Xta7GjrvEBske/2J/c4oyzB04FzWOqfsTqzHQbs8cNh2CetcODJO5L/Tbed8Cg==
+      integrity: sha512-0wA8L8BBKpLXGvAUWFdLMH6SYP3XtEYX3dieQzUF6TA5Ru9wEoB0WkxlHsGKRMSzRX+lfhseopK1lIuAwtDuzQ==
   /@intrnl/node-worker-pool/0.1.6:
     dependencies:
       '@types/node': 14.14.9

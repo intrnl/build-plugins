@@ -10,15 +10,15 @@
 		"snowpack": "^2.15.1"
 	},
 	"dependencies": {
-		"rollup-plugin-html": "workspace:^0.1.0",
-		"rollup-plugin-postcss": "workspace:^0.1.0",
-		"rollup-plugin-terser": "workspace:^0.1.0",
 		"cheerio": "^1.0.0-rc.3",
 		"fast-glob": "^3.2.4",
-		"rollup": "^2.33.3"
+		"rollup": "^2.33.3",
+		"rollup-plugin-html": "workspace:^0.1.0",
+		"rollup-plugin-postcss": "workspace:^0.1.0",
+		"rollup-plugin-terser": "workspace:^0.1.0"
 	},
 	"devDependencies": {
-		"@intrnl/bundl": "^0.1.15",
+		"@intrnl/bundl": "^0.1.16",
 		"snowpack": "^2.17.1"
 	}
 }
