@@ -25,20 +25,12 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 		modifyRollupOptions = (x) => x,
 	} = pluginOpts;
 
-	let buildDirectory = snowpackConfig.buildOptions.out;
-	let workDirectory = path.join(buildDirectory, '../__bundle_temp__/');
-
-	snowpackConfig.buildOptions.out = workDirectory;
-	snowpackConfig.buildOptions.clean = true;
-
 	return {
 		name: 'snowpack-bundle-rollup',
-		async optimize () {
+		async optimize ({ buildDirectory }) {
 			try {
-				await fs.rm(buildDirectory, { recursive: true, force: true });
-
 				log('Retrieving entrypoints');
-				let inputs = await glob(entrypoints, { cwd: workDirectory, absolute: true });
+				let inputs = await glob(entrypoints, { cwd: buildDirectory, absolute: true });
 
 				log('Generating bundle');
 				let rollupOptions = {
@@ -46,7 +38,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 						input: inputs,
 						plugins: [
 							proxyResolverPlugin(),
-							modulesDir !== false &&	webModulesChunkPlugin({ workDirectory, modulesDir }),
+							modulesDir !== false &&	webModulesChunkPlugin({ buildDirectory, modulesDir }),
 
 							postcssPlugin({ minify }),
 
@@ -71,16 +63,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 				log('Writing bundle');
 				await bundle.write(rollupOptions.output);
 
-				// log('Moving public files');
-
 				log('Cleaning up');
-				if (keepBuildFiles) {
-					let keptFolder = buildDirectory + '-original';
-					await fs.rm(keptFolder, { recursive: true, force: true });
-					await fs.rename(workDirectory, keptFolder);
-				} else {
-					await fs.rm(workDirectory, { recursive: true });
-				}
 			} catch (e) {
 				console.error(e);
 			}

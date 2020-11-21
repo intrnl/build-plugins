@@ -7,8 +7,8 @@ import glob from 'fast-glob';
 
 /** @returns {import('rollup').Plugin} */
 export function webModulesChunkPlugin (opts = {}) {
-	let { workDirectory, modulesDir } = opts;
-	let webModulesDirectory = path.join(workDirectory, 'web_modules/');
+	let { buildDirectory, modulesDir } = opts;
+	let webModulesDirectory = path.join(buildDirectory, 'web_modules/');
 
 	let sep = /\//g;
 
