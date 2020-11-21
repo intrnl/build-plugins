@@ -1,0 +1,30 @@
+{
+	"private": true,
+	"name": "rollup-plugin-html",
+	"version": "0.1.0",
+	"license": "MIT",
+	"source": "lib/index.ts",
+	"main": "dist/rollup-plugin-html.js",
+	"module": "dist/rollup-plugin-html.mjs",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"build": "pnpm run build:lib & pnpm run build:types",
+		"build:lib": "bundl",
+		"build:types": "tsc"
+	},
+	"peerDependencies": {
+		"rollup": "^2.33.2"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3"
+	},
+	"devDependencies": {
+		"@intrnl/bundl": "^0.1.15",
+		"@types/cheerio": "^0.22.22",
+		"@types/node": "^14.14.9",
+		"rollup": "^2.33.3"
+	},
+	"bundl": {
+		"target": "es2017"
+	}
+}

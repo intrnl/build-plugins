@@ -1,0 +1,33 @@
+{
+	"name": "rollup-plugin-postcss",
+	"version": "0.1.0",
+	"license": "MIT",
+	"source": "lib/index.ts",
+	"main": "dist/rollup-plugin-postcss.js",
+	"module": "dist/rollup-plugin-postcss.mjs",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"build": "pnpm run build:lib & pnpm run build:types",
+		"build:lib": "bundl",
+		"build:types": "tsc"
+	},
+	"peerDependencies": {
+		"rollup": "^2.33.3"
+	},
+	"dependencies": {
+		"@rollup/pluginutils": "^4.1.0",
+		"clean-css": "^4.2.3",
+		"concat-with-sourcemaps": "^1.1.0",
+		"postcss": "^8.1.8",
+		"postcss-modules": "^3.2.2"
+	},
+	"devDependencies": {
+		"@intrnl/bundl": "^0.1.15",
+		"@types/clean-css": "^4.2.2",
+		"@types/node": "^14.14.9",
+		"rollup": "^2.33.3"
+	},
+	"bundl": {
+		"target": "es2017"
+	}
+}

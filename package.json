@@ -1,0 +1,9 @@
+{
+	"private": true,
+	"scripts": {
+		"prune:modules": "find . -name node_modules -type d -prune -exec rm -rf '{}' +"
+	},
+	"devDependencies": {
+		"typescript": "^4.1.2"
+	}
+}
