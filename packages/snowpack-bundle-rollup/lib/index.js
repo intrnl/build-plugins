@@ -5,9 +5,9 @@ import glob from 'fast-glob';
 import { log } from './logger';
 
 import { rollup } from 'rollup';
-import { html as htmlPlugin } from '@accord/rollup-plugin-html';
-import { terser as terserPlugin } from '@accord/rollup-plugin-terser';
-import { postcss as postcssPlugin } from '@accord/rollup-plugin-postcss';
+import { html as htmlPlugin } from 'rollup-plugin-html';
+import { terser as terserPlugin } from 'rollup-plugin-terser';
+import { postcss as postcssPlugin } from 'rollup-plugin-postcss';
 import { rewriteHTMLPlugin } from './plugins/rewrite-html';
 import { proxyResolverPlugin } from './plugins/proxy-resolver';
 import { webModulesChunkPlugin } from './plugins/web-modules-chunk';
