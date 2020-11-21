@@ -1,7 +1,13 @@
 {
 	"name": "@intrnl/snowpack-bundle-rollup",
+	"description": "Bundle Snowpack app for production with Rollup",
 	"version": "0.1.0",
 	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"directory": "packages/snowpack-bundle-rollup"
+	},
 	"source": "lib/index.js",
 	"main": "dist/snowpack-bundle-rollup.js",
 	"module": "dist/snowpack-bundle-rollup.mjs",
