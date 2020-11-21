@@ -20,7 +20,6 @@ export function html (opts: PluginOptions = {}): Plugin {
 			let { input } = inputOpts;
 
 			entries = new Set(getEntries(input));
-			documents.clear();
 
 			return inputOpts;
 		},
