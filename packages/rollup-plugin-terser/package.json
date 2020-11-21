@@ -7,7 +7,7 @@
 	"module": "dist/rollup-plugin-terser.mjs",
 	"types": "types/index.d.ts",
 	"scripts": {
-		"build": "pnpm run build:lib & pnpm run build:types",
+		"build": "pnpm run build:lib && pnpm run build:types",
 		"build:lib": "bundl",
 		"build:types": "tsc"
 	},
