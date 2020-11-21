@@ -8,12 +8,12 @@ importers:
     dependencies:
       preact: 10.5.7
     devDependencies:
+      '@intrnl/snowpack-bundle-rollup': 'link:../packages/snowpack-bundle-rollup'
       snowpack: 2.17.1
-      snowpack-bundle-rollup: 'link:../packages/snowpack-bundle-rollup'
     specifiers:
+      '@intrnl/snowpack-bundle-rollup': 'workspace:^0.1.0'
       preact: ^10.5.7
       snowpack: ^2.17.1
-      snowpack-bundle-rollup: 'workspace:^0.1.0'
   packages/rollup-plugin-html:
     dependencies:
       cheerio: 1.0.0-rc.3
@@ -70,23 +70,23 @@ importers:
       terser: ^5.5.0
   packages/snowpack-bundle-rollup:
     dependencies:
+      '@intrnl/rollup-plugin-html': 'link:../rollup-plugin-html'
+      '@intrnl/rollup-plugin-postcss': 'link:../rollup-plugin-postcss'
+      '@intrnl/rollup-plugin-terser': 'link:../rollup-plugin-terser'
       cheerio: 1.0.0-rc.3
       fast-glob: 3.2.4
       rollup: 2.33.3
-      rollup-plugin-html: 'link:../rollup-plugin-html'
-      rollup-plugin-postcss: 'link:../rollup-plugin-postcss'
-      rollup-plugin-terser: 'link:../rollup-plugin-terser'
     devDependencies:
       '@intrnl/bundl': 0.1.16
       snowpack: 2.17.1
     specifiers:
       '@intrnl/bundl': ^0.1.16
+      '@intrnl/rollup-plugin-html': 'workspace:^0.1.0'
+      '@intrnl/rollup-plugin-postcss': 'workspace:^0.1.0'
+      '@intrnl/rollup-plugin-terser': 'workspace:^0.1.0'
       cheerio: ^1.0.0-rc.3
       fast-glob: ^3.2.4
       rollup: ^2.33.3
-      rollup-plugin-html: 'workspace:^0.1.0'
-      rollup-plugin-postcss: 'workspace:^0.1.0'
-      rollup-plugin-terser: 'workspace:^0.1.0'
       snowpack: ^2.17.1
 lockfileVersion: 5.2
 packages:
