@@ -1,6 +1,6 @@
 # `snowpack-bundle-rollup`
 
-Bundle Snowpack app for production with Rollup.
+Snowpack plugin for bundling to production using Rollup
 
 ## Usage
 
