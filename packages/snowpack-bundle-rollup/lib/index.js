@@ -44,7 +44,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 							proxyResolverPlugin(),
 							modulesDir !== false &&	webModulesChunkPlugin({ buildDirectory, modulesDir }),
 
-							postcssPlugin({ minify }),
+							postcssPlugin({ minify, sourcemap: false }),
 
 							minify && terserPlugin(),
 
@@ -57,6 +57,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 						entryFileNames: path.join(assetsDir, '[name]-[hash].js'),
 						assetFileNames: path.join(assetsDir, '[name]-[hash][extname]'),
 						chunkFileNames: path.join(assetsDir, '[name]-[hash].js'),
+						sourcemap: false,
 					},
 				};
 
