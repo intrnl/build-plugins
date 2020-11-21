@@ -6,6 +6,10 @@
 	"main": "dist/snowpack-bundle-rollup.js",
 	"module": "dist/snowpack-bundle-rollup.mjs",
 	"types": "types/index.d.ts",
+	"scripts": {
+		"build": "pnpm run build:lib",
+		"build:lib": "bundl"
+	},
 	"peerDependencies": {
 		"snowpack": "^2.15.1"
 	},
