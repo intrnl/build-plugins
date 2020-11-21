@@ -22,7 +22,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 		modulesDir = 'modules/',
 		minify = false,
 		keepBuildFiles = false,
-		modifyRollupOptions = (x) => x,
+		modifyRollupOptions = () => {},
 	} = pluginOpts;
 
 	let { baseUrl, webModulesUrl } = snowpackConfig.buildOptions;
