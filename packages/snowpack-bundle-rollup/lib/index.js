@@ -3,6 +3,7 @@ import path from 'path';
 import glob from 'fast-glob';
 
 import { log } from './logger';
+import { removeEmptyDirectories } from './utils/remove-empty-dirs';
 
 import { rollup } from 'rollup';
 import { html as htmlPlugin } from 'rollup-plugin-html';
@@ -24,12 +25,14 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 		modifyRollupOptions = (x) => x,
 	} = pluginOpts;
 
-	let baseUrl = snowpackConfig.buildOptions.baseUrl;
+	let { baseUrl, webModulesUrl } = snowpackConfig.buildOptions;
 
 	return {
 		name: 'snowpack-bundle-rollup',
 		async optimize ({ buildDirectory }) {
 			try {
+				let webModulesDirectory = path.join(buildDirectory, webModulesUrl);
+
 				log('Retrieving entrypoints');
 				let inputs = await glob(entrypoints, { cwd: buildDirectory, absolute: true });
 
@@ -64,7 +67,17 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 				log('Writing bundle');
 				await bundle.write(rollupOptions.output);
 
-				log('Cleaning up');
+				if (!keepBuildFiles) {
+					log('Cleaning up');
+
+					for (let file of bundle.watchFiles) {
+						if (inputs.includes(file)) continue;
+						await fs.rm(file);
+					}
+
+					await fs.rm(webModulesDirectory, { recursive: true });
+					await removeEmptyDirectories(buildDirectory);
+				}
 			} catch (e) {
 				console.error(e);
 			}
