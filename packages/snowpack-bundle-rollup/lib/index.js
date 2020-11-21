@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import glob from 'fast-glob';
 
-import { log } from './logger';
+import { log } from './utils/logger';
 import { removeEmptyDirectories } from './utils/remove-empty-dirs';
 
 import { rollup } from 'rollup';
