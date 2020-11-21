@@ -6,9 +6,9 @@ import { log } from './utils/logger';
 import { removeEmptyDirectories } from './utils/remove-empty-dirs';
 
 import { rollup } from 'rollup';
-import { html as htmlPlugin } from 'rollup-plugin-html';
-import { terser as terserPlugin } from 'rollup-plugin-terser';
-import { postcss as postcssPlugin } from 'rollup-plugin-postcss';
+import { html as htmlPlugin } from '@intrnl/rollup-plugin-html';
+import { terser as terserPlugin } from '@intrnl/rollup-plugin-terser';
+import { postcss as postcssPlugin } from '@intrnl/rollup-plugin-postcss';
 import { rewriteHTMLPlugin } from './plugins/rewrite-html';
 import { proxyResolverPlugin } from './plugins/proxy-resolver';
 import { webModulesChunkPlugin } from './plugins/web-modules-chunk';
