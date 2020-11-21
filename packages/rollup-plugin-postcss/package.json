@@ -1,7 +1,13 @@
 {
-	"name": "rollup-plugin-postcss",
+	"name": "@intrnl/rollup-plugin-postcss",
+	"description": "Bundle CSS stylesheets with PostCSS",
 	"version": "0.1.0",
 	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"directory": "packages/rollup-plugin-postcss"
+	},
 	"source": "lib/index.ts",
 	"main": "dist/rollup-plugin-postcss.js",
 	"module": "dist/rollup-plugin-postcss.mjs",

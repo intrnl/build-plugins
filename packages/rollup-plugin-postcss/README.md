@@ -1,12 +1,18 @@
 # `rollup-plugin-postcss`
 
-Rollup plugin for bundling CSS stylesheets.
+Bundle CSS stylesheets with PostCSS
 
 ## Usage
 
+```sh
+npm install --save-dev @intrnl/rollup-plugin-postcss
+# pnpm install --save-dev @intrnl/rollup-plugin-postcss
+# yarn add --dev @intrnl/rollup-plugin-postcss
+```
+
 ```js
 // rollup.config.js
-import { postcss as postcssPlugin } from 'rollup-plugin-postcss';
+import { postcss as postcssPlugin } from '@intrnl/rollup-plugin-postcss';
 
 export default {
   input: 'src/index.js',

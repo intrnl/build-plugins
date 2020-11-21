@@ -1,8 +1,13 @@
 {
-	"private": true,
-	"name": "rollup-plugin-html",
+	"name": "@intrnl/rollup-plugin-html",
+	"description": "Allows using HTML files as input for Rollup",
 	"version": "0.1.0",
 	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"directory": "packages/rollup-plugin-html"
+	},
 	"source": "lib/index.ts",
 	"main": "dist/rollup-plugin-html.js",
 	"module": "dist/rollup-plugin-html.mjs",

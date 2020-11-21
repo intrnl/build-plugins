@@ -1,5 +1,5 @@
 {
-	"name": "snowpack-bundle-rollup",
+	"name": "@intrnl/snowpack-bundle-rollup",
 	"version": "0.1.0",
 	"license": "MIT",
 	"source": "lib/index.js",

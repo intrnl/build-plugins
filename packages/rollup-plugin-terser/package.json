@@ -1,7 +1,13 @@
 {
-	"name": "rollup-plugin-terser",
+	"name": "@intrnl/rollup-plugin-terser",
+	"description": "Minify generated bundles with Terser",
 	"version": "0.1.0",
 	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"directory": "packages/rollup-plugin-terser"
+	},
 	"source": "lib/index.ts",
 	"main": "dist/rollup-plugin-terser.js",
 	"module": "dist/rollup-plugin-terser.mjs",

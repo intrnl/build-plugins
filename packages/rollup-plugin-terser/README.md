@@ -4,9 +4,15 @@ Minify generated bundles with Terser
 
 ## Usage
 
+```sh
+npm install --save-dev @intrnl/rollup-plugin-terser
+# pnpm install --save-dev @intrnl/rollup-plugin-terser
+# yarn add --dev @intrnl/rollup-plugin-terser
+```
+
 ```js
 // rollup.config.js
-import { terser as terserPlugin } from 'rollup-plugin-terser';
+import { terser as terserPlugin } from '@intrnl/rollup-plugin-terser';
 
 export default {
   input: 'src/index.html',

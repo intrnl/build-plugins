@@ -4,9 +4,15 @@ Allows using HTML files as input for Rollup
 
 ## Usage
 
+```sh
+npm install --save-dev @intrnl/rollup-plugin-html
+# pnpm install --save-dev @intrnl/rollup-plugin-html
+# yarn add --dev @intrnl/rollup-plugin-html
+```
+
 ```js
 // rollup.config.js
-import { html as htmlPlugin } from 'rollup-plugin-html';
+import { html as htmlPlugin } from '@intrnl/rollup-plugin-html';
 
 export default {
   input: 'src/index.html',
