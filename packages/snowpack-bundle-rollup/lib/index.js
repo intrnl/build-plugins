@@ -73,6 +73,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 					for (let file of bundle.watchFiles) {
 						if (inputs.includes(file)) continue;
 						await fs.rm(file);
+						await fs.rm(file + '.proxy.js', { force: true });
 					}
 
 					await fs.rm(webModulesDirectory, { recursive: true });
