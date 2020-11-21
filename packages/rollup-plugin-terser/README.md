@@ -22,12 +22,9 @@ export default {
 };
 ```
 
-## API Reference
+## Options
 
-### `terser`
-
-- `options?`
-  - `numWorkers?: number`  
-    The max number of workers to spawn, defaults to the number of CPU cores minus 1
-  - `minifyOptions?: terser.MinifyOptions`  
-    Terser minification options
+- `numWorkers?: number`  
+  The max number of workers to spawn, defaults to the number of CPU cores minus 1
+- `minifyOptions?: terser.MinifyOptions`  
+  Terser minification options

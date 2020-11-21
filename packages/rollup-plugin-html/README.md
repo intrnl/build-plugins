@@ -22,10 +22,7 @@ export default {
 };
 ```
 
-## API Reference
+## Options
 
-### `html`
-
-- `options?`
-  - `baseUrl?: string`  
-    The base URL where static assets are hosted
+- `baseUrl?: string`  
+  The base URL where static assets are hosted
