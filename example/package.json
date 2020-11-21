@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"name": "snowpack-bundle-rollup-example",
+	"dependencies": {
+		"preact": "^10.5.7"
+	},
+	"devDependencies": {
+		"snowpack": "^2.17.1",
+		"snowpack-bundle-rollup": "workspace:^0.1.0"
+	}
+}
