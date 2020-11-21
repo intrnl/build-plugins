@@ -1,7 +1,7 @@
 {
 	"name": "@intrnl/rollup-plugin-html",
 	"description": "Allows using HTML files as input for Rollup",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"author": "intrnl",
 	"repository": {
@@ -20,7 +20,8 @@
 	"scripts": {
 		"build": "pnpm run build:lib && pnpm run build:types",
 		"build:lib": "bundl",
-		"build:types": "tsc"
+		"build:types": "tsc",
+		"prepublishOnly": "pnpm run build"
 	},
 	"peerDependencies": {
 		"rollup": "^2.33.2"

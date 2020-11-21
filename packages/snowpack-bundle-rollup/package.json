@@ -1,7 +1,7 @@
 {
 	"name": "@intrnl/snowpack-bundle-rollup",
 	"description": "Bundle Snowpack app for production with Rollup",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"author": "intrnl",
 	"repository": {
@@ -17,7 +17,8 @@
 	],
 	"scripts": {
 		"build": "pnpm run build:lib",
-		"build:lib": "bundl"
+		"build:lib": "bundl",
+		"prepublishOnly": "pnpm run build"
 	},
 	"peerDependencies": {
 		"snowpack": "^2.15.1"
