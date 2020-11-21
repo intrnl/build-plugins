@@ -6,6 +6,11 @@
 	"main": "dist/rollup-plugin-terser.js",
 	"module": "dist/rollup-plugin-terser.mjs",
 	"types": "types/index.d.ts",
+	"files": [
+		"dist/",
+		"types/",
+		"README.md"
+	],
 	"scripts": {
 		"build": "pnpm run build:lib && pnpm run build:types",
 		"build:lib": "bundl",

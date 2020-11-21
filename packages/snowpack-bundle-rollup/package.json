@@ -6,6 +6,11 @@
 	"main": "dist/snowpack-bundle-rollup.js",
 	"module": "dist/snowpack-bundle-rollup.mjs",
 	"types": "types/index.d.ts",
+	"files": [
+		"dist/",
+		"types/",
+		"README.md"
+	],
 	"scripts": {
 		"build": "pnpm run build:lib",
 		"build:lib": "bundl"

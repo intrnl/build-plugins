@@ -7,6 +7,11 @@
 	"main": "dist/rollup-plugin-html.js",
 	"module": "dist/rollup-plugin-html.mjs",
 	"types": "types/index.d.ts",
+	"files": [
+		"dist/",
+		"types/",
+		"README.md"
+	],
 	"scripts": {
 		"build": "pnpm run build:lib && pnpm run build:types",
 		"build:lib": "bundl",
