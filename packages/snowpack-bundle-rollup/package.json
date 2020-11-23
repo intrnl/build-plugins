@@ -1,7 +1,7 @@
 {
 	"name": "@intrnl/snowpack-bundle-rollup",
 	"description": "Snowpack plugin for bundling to production using Rollup",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"license": "MIT",
 	"author": "intrnl",
 	"repository": {

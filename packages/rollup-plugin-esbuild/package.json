@@ -1,7 +1,7 @@
 {
 	"name": "@intrnl/rollup-plugin-esbuild",
 	"description": "Transpile your source code with ESBuild",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"license": "MIT",
 	"author": "intrnl",
 	"repository": {
