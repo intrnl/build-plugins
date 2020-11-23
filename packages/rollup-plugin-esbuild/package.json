@@ -1,0 +1,41 @@
+{
+	"name": "@intrnl/rollup-plugin-esbuild",
+	"description": "Transpile your source code with ESBuild",
+	"version": "0.5.0",
+	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"directory": "packages/rollup-plugin-esbuild"
+	},
+	"source": "lib/index.ts",
+	"main": "dist/rollup-plugin-esbuild.js",
+	"module": "dist/rollup-plugin-esbuild.mjs",
+	"types": "types/index.d.ts",
+	"files": [
+		"dist/",
+		"types/",
+		"README.md"
+	],
+	"scripts": {
+		"build": "pnpm run build:lib && pnpm run build:types",
+		"build:lib": "bundl",
+		"build:types": "tsc",
+		"prepublishOnly": "pnpm run build"
+	},
+	"peerDependencies": {
+		"esbuild": "^0.8.0",
+		"rollup": "^2.26.8"
+	},
+	"dependencies": {
+		"@rollup/pluginutils": "^4.1.0"
+	},
+	"devDependencies": {
+		"@intrnl/bundl": "^0.1.13",
+		"esbuild": "^0.8.2",
+		"rollup": "^2.33.1"
+	},
+	"bundl": {
+		"target": "es2017"
+	}
+}
