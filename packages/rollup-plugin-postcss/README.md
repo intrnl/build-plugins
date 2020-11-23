@@ -19,7 +19,7 @@ export default {
   plugins: [
     postcssPlugin(),
   ],
-}
+};
 ```
 
 ## Options
