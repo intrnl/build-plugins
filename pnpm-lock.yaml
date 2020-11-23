@@ -26,11 +26,11 @@ importers:
     dependencies:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
     devDependencies:
-      '@intrnl/bundl': 0.1.16
+      '@intrnl/bundl': 'link:../bundl'
       esbuild: 0.8.12
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.13
+      '@intrnl/bundl': 'workspace:^0.2.0'
       '@rollup/pluginutils': ^4.1.0
       esbuild: ^0.8.2
       rollup: ^2.33.1
@@ -38,12 +38,12 @@ importers:
     dependencies:
       cheerio: 1.0.0-rc.3
     devDependencies:
-      '@intrnl/bundl': 0.1.16
+      '@intrnl/bundl': 'link:../bundl'
       '@types/cheerio': 0.22.22
       '@types/node': 14.14.9
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.16
+      '@intrnl/bundl': 'workspace:^0.2.0'
       '@types/cheerio': ^0.22.22
       '@types/node': ^14.14.9
       cheerio: ^1.0.0-rc.3
@@ -56,12 +56,12 @@ importers:
       postcss: 8.1.8
       postcss-modules: 3.2.2
     devDependencies:
-      '@intrnl/bundl': 0.1.16
+      '@intrnl/bundl': 'link:../bundl'
       '@types/clean-css': 4.2.2
       '@types/node': 14.14.9
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.16
+      '@intrnl/bundl': 'workspace:^0.2.0'
       '@rollup/pluginutils': ^4.1.0
       '@types/clean-css': ^4.2.2
       '@types/node': ^14.14.9
@@ -76,12 +76,12 @@ importers:
       serialize-javascript: 5.0.1
       terser: 5.5.0
     devDependencies:
-      '@intrnl/bundl': 0.1.16
+      '@intrnl/bundl': 'link:../bundl'
       '@types/node': 14.14.9
       '@types/serialize-javascript': 4.0.0
       rollup: 2.33.3
     specifiers:
-      '@intrnl/bundl': ^0.1.16
+      '@intrnl/bundl': 'workspace:^0.2.0'
       '@intrnl/node-worker-pool': ^0.1.6
       '@types/node': ^14.14.9
       '@types/serialize-javascript': ^4.0.0
@@ -97,10 +97,10 @@ importers:
       fast-glob: 3.2.4
       rollup: 2.33.3
     devDependencies:
-      '@intrnl/bundl': 0.1.16
+      '@intrnl/bundl': 'link:../bundl'
       snowpack: 2.17.1
     specifiers:
-      '@intrnl/bundl': ^0.1.16
+      '@intrnl/bundl': 'workspace:^0.2.0'
       '@intrnl/rollup-plugin-html': 'workspace:^0.1.0'
       '@intrnl/rollup-plugin-postcss': 'workspace:^0.1.0'
       '@intrnl/rollup-plugin-terser': 'workspace:^0.1.0'
