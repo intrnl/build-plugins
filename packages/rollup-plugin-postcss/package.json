@@ -30,7 +30,7 @@
 		"@rollup/pluginutils": "^4.1.0",
 		"clean-css": "^4.2.3",
 		"concat-with-sourcemaps": "^1.1.0",
-		"postcss": "^8.1.8",
+		"postcss": "^8.1.9",
 		"postcss-modules": "^3.2.2"
 	},
 	"devDependencies": {

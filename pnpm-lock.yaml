@@ -16,9 +16,9 @@ importers:
       '@types/node': 14.14.9
     specifiers:
       '@intrnl/bundl': ^0.2.0
-      '@intrnl/rollup-plugin-esbuild': 'workspace:^0.5.0'
+      '@intrnl/rollup-plugin-esbuild': 'workspace:^0.5.1'
       '@types/node': ^14.14.9
-      esbuild: ^0.8.11
+      esbuild: ^0.8.12
       escalade: ^3.1.1
       kleur: ^4.1.3
       rollup: ^2.33.3
@@ -32,8 +32,8 @@ importers:
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@rollup/pluginutils': ^4.1.0
-      esbuild: ^0.8.2
-      rollup: ^2.33.1
+      esbuild: ^0.8.12
+      rollup: ^2.33.3
   packages/rollup-plugin-html:
     dependencies:
       cheerio: 1.0.0-rc.3
@@ -53,7 +53,7 @@ importers:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
       clean-css: 4.2.3
       concat-with-sourcemaps: 1.1.0
-      postcss: 8.1.8
+      postcss: 8.1.9
       postcss-modules: 3.2.2
     devDependencies:
       '@intrnl/bundl': 'link:../bundl'
@@ -67,7 +67,7 @@ importers:
       '@types/node': ^14.14.9
       clean-css: ^4.2.3
       concat-with-sourcemaps: ^1.1.0
-      postcss: ^8.1.8
+      postcss: ^8.1.9
       postcss-modules: ^3.2.2
       rollup: ^2.33.3
   packages/rollup-plugin-terser:
@@ -101,9 +101,9 @@ importers:
       snowpack: 2.17.1
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
-      '@intrnl/rollup-plugin-html': 'workspace:^0.1.0'
-      '@intrnl/rollup-plugin-postcss': 'workspace:^0.1.0'
-      '@intrnl/rollup-plugin-terser': 'workspace:^0.1.0'
+      '@intrnl/rollup-plugin-html': 'workspace:^0.1.2'
+      '@intrnl/rollup-plugin-postcss': 'workspace:^0.1.2'
+      '@intrnl/rollup-plugin-terser': 'workspace:^0.1.2'
       cheerio: ^1.0.0-rc.3
       fast-glob: ^3.2.4
       rollup: ^2.33.3
@@ -115,7 +115,7 @@ importers:
       '@intrnl/snowpack-bundle-rollup': 'link:..'
       snowpack: 2.17.1
     specifiers:
-      '@intrnl/snowpack-bundle-rollup': 'workspace:^0.1.0'
+      '@intrnl/snowpack-bundle-rollup': 'workspace:^0.1.3'
       preact: ^10.5.7
       snowpack: ^2.17.1
 lockfileVersion: 5.2
@@ -1110,10 +1110,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==
-  /isarray/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
   /isbinaryfile/4.0.6:
     dev: true
     engines:
@@ -1124,14 +1120,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
-  /isobject/2.1.0:
-    dependencies:
-      isarray: 1.0.0
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=
   /js-tokens/4.0.0:
     dev: true
     resolution:
@@ -1156,13 +1144,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-H1tr8QP2PxFTNwAFM74Mui2b6ovcY9FoxJefgrwxY+OCJcq01k5nvhf4M/KnizzrJvLRap5STUy7dgDV35iUBw==
-  /line-column/1.0.2:
-    dependencies:
-      isarray: 1.0.0
-      isobject: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha1-0lryk2tvSEkXKzEuR5LR2Ye8NKI=
   /lines-and-columns/1.1.6:
     dev: true
     resolution:
@@ -1626,17 +1607,17 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
-  /postcss/8.1.8:
+  /postcss/8.1.9:
     dependencies:
       colorette: 1.2.1
-      line-column: 1.0.2
       nanoid: 3.1.18
       source-map: 0.6.1
+      vfile-location: 3.2.0
     dev: false
     engines:
       node: ^10 || ^12 || >=14
     resolution:
-      integrity: sha512-hO6jFWBy0QnBBRaw+s0F4hVPKGDICec/nLNEG1D4qqw9/LBzWMkTjckqqELXAo0J42jN8GFZXtgQfezEaoG9gQ==
+      integrity: sha512-oWuBpEl1meaMKkQXn0ic78TUrgsMvrAZLE/6ZY0H3LTteq2O3L8PGWwMbPLctpksTJIHjQeossMUMNQW7qRIHQ==
   /preact/10.5.7:
     dev: false
     resolution:
@@ -1998,6 +1979,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-X6kS2B630MdK/BQN5zF/DKffQ34=
+  /vfile-location/3.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-aLEIZKv/oxuCDZ8lkJGhuhztf/BW4M+iHdCwglA/eWc+vtuRFJj8EtgceYFX4LRjOhCAAiNHsKGssC6onJ+jbA==
   /which/2.0.2:
     dependencies:
       isexe: 2.0.0

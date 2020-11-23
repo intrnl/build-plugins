@@ -32,8 +32,8 @@
 	},
 	"devDependencies": {
 		"@intrnl/bundl": "workspace:^0.2.0",
-		"esbuild": "^0.8.2",
-		"rollup": "^2.33.1"
+		"esbuild": "^0.8.12",
+		"rollup": "^2.33.3"
 	},
 	"bundl": {
 		"target": "es2017"
