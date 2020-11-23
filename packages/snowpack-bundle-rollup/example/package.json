@@ -6,6 +6,6 @@
 	},
 	"devDependencies": {
 		"snowpack": "^2.17.1",
-		"@intrnl/snowpack-bundle-rollup": "workspace:^0.1.0"
+		"@intrnl/snowpack-bundle-rollup": "link:../"
 	}
 }
