@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"author": "intrnl",
 	"repository": {
-		"url": "https://github.com/intrnl/snowpack-bundle-rollup",
+		"url": "https://github.com/intrnl/build-plugins",
 		"directory": "packages/rollup-plugin-esbuild"
 	},
 	"source": "lib/index.ts",
