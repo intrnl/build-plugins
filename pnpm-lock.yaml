@@ -4,16 +4,6 @@ importers:
       typescript: 4.1.2
     specifiers:
       typescript: ^4.1.2
-  example:
-    dependencies:
-      preact: 10.5.7
-    devDependencies:
-      '@intrnl/snowpack-bundle-rollup': 'link:../packages/snowpack-bundle-rollup'
-      snowpack: 2.17.1
-    specifiers:
-      '@intrnl/snowpack-bundle-rollup': 'workspace:^0.1.0'
-      preact: ^10.5.7
-      snowpack: ^2.17.1
   packages/rollup-plugin-html:
     dependencies:
       cheerio: 1.0.0-rc.3
@@ -87,6 +77,16 @@ importers:
       cheerio: ^1.0.0-rc.3
       fast-glob: ^3.2.4
       rollup: ^2.33.3
+      snowpack: ^2.17.1
+  packages/snowpack-bundle-rollup/example:
+    dependencies:
+      preact: 10.5.7
+    devDependencies:
+      '@intrnl/snowpack-bundle-rollup': 'link:..'
+      snowpack: 2.17.1
+    specifiers:
+      '@intrnl/snowpack-bundle-rollup': 'workspace:^0.1.0'
+      preact: ^10.5.7
       snowpack: ^2.17.1
 lockfileVersion: 5.2
 packages:
