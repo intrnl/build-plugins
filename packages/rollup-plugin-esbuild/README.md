@@ -1,6 +1,6 @@
 # `rollup-plugin-esbuild`
 
-Transpile your source code with ESBuild, doing a two pass to prevent helper
+Transpile your source code with esbuild, doing a two pass to prevent helper
 duplicates in your code.
 
 ## Usage
@@ -33,4 +33,4 @@ export default {
   Loaders to use, files with extension that does not match any loaders will be
   ignored
 - `transformOptions?: TransformOptions`  
-  ESBuild transform options
+  Transform options
