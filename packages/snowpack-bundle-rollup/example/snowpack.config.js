@@ -8,6 +8,6 @@ module.exports = {
 		clean: true,
 	},
 	plugins: [
-		['snowpack-bundle-rollup'],
+		['@intrnl/snowpack-bundle-rollup'],
 	],
 };
