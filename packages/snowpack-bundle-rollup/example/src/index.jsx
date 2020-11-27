@@ -8,5 +8,4 @@ function App () {
 	);
 }
 
-console.log(import.meta.env.MODE)
 render(<App />, document.querySelector('#root'));
