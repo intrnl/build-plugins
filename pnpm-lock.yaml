@@ -48,6 +48,24 @@ importers:
       '@types/node': ^14.14.10
       cheerio: ^1.0.0-rc.3
       rollup: ^2.33.3
+  packages/rollup-plugin-include:
+    dependencies:
+      '@rollup/pluginutils': 4.1.0_rollup@2.33.3
+      estree-walker: 2.0.1
+      magic-string: 0.25.7
+    devDependencies:
+      '@intrnl/bundl': 'link:../bundl'
+      '@types/estree': 0.0.45
+      '@types/node': 14.14.10
+      rollup: 2.33.3
+    specifiers:
+      '@intrnl/bundl': 'workspace:^0.2.0'
+      '@rollup/pluginutils': ^4.1.0
+      '@types/estree': ^0.0.45
+      '@types/node': ^14.14.10
+      estree-walker: ^2.0.1
+      magic-string: ^0.25.7
+      rollup: ^2.33.3
   packages/rollup-plugin-postcss:
     dependencies:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
@@ -1193,7 +1211,6 @@ packages:
   /magic-string/0.25.7:
     dependencies:
       sourcemap-codec: 1.4.8
-    dev: true
     resolution:
       integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
   /make-dir/3.1.0:
@@ -1837,7 +1854,6 @@ packages:
     resolution:
       integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
   /sourcemap-codec/1.4.8:
-    dev: true
     resolution:
       integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
   /ssri/8.0.0:

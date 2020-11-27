@@ -1,0 +1,43 @@
+{
+	"name": "@intrnl/rollup-plugin-include",
+	"description": "Include chunks or assets within your Rollup bundle",
+	"version": "0.1.0",
+	"license": "MIT",
+	"author": "intrnl",
+	"repository": {
+		"url": "https://github.com/intrnl/build-plugins",
+		"directory": "packages/rollup-plugin-include"
+	},
+	"source": "lib/index.ts",
+	"main": "dist/rollup-plugin-include.js",
+	"module": "dist/rollup-plugin-include.mjs",
+	"types": "types/index.d.ts",
+	"files": [
+		"dist/",
+		"types/",
+		"README.md"
+	],
+	"scripts": {
+		"build": "pnpm run build:lib && pnpm run build:types",
+		"build:lib": "bundl",
+		"build:types": "tsc",
+		"prepublishOnly": "pnpm run build"
+	},
+	"peerDependencies": {
+		"rollup": "^2.33.3"
+	},
+	"dependencies": {
+		"@rollup/pluginutils": "^4.1.0",
+		"estree-walker": "^2.0.1",
+		"magic-string": "^0.25.7"
+	},
+	"devDependencies": {
+		"@intrnl/bundl": "workspace:^0.2.0",
+		"@types/estree": "^0.0.45",
+		"@types/node": "^14.14.10",
+		"rollup": "^2.33.3"
+	},
+	"bundl": {
+		"target": "es2017"
+	}
+}
