@@ -1,2 +1,9 @@
 packages:
-  - 'packages/**'
+  - packages/bundl
+  - packages/rollup-plugin-esbuild
+  - packages/rollup-plugin-html
+  - packages/rollup-plugin-include
+  - packages/rollup-plugin-postcss
+  - packages/rollup-plugin-terser
+  - packages/snowpack-bundle-rollup
+  - packages/snowpack-bundle-rollup/example
