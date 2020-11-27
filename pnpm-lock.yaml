@@ -7,18 +7,18 @@ importers:
   packages/bundl:
     dependencies:
       '@intrnl/rollup-plugin-esbuild': 'link:../rollup-plugin-esbuild'
-      esbuild: 0.8.12
+      esbuild: 0.8.16
       escalade: 3.1.1
       kleur: 4.1.3
       rollup: 2.33.3
     devDependencies:
       '@intrnl/bundl': 0.2.0
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     specifiers:
       '@intrnl/bundl': ^0.2.0
       '@intrnl/rollup-plugin-esbuild': 'workspace:^0.5.1'
-      '@types/node': ^14.14.9
-      esbuild: ^0.8.12
+      '@types/node': ^14.14.10
+      esbuild: ^0.8.16
       escalade: ^3.1.1
       kleur: ^4.1.3
       rollup: ^2.33.3
@@ -27,12 +27,12 @@ importers:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
     devDependencies:
       '@intrnl/bundl': 'link:../bundl'
-      esbuild: 0.8.12
+      esbuild: 0.8.16
       rollup: 2.33.3
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@rollup/pluginutils': ^4.1.0
-      esbuild: ^0.8.12
+      esbuild: ^0.8.16
       rollup: ^2.33.3
   packages/rollup-plugin-html:
     dependencies:
@@ -40,12 +40,12 @@ importers:
     devDependencies:
       '@intrnl/bundl': 'link:../bundl'
       '@types/cheerio': 0.22.22
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       rollup: 2.33.3
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@types/cheerio': ^0.22.22
-      '@types/node': ^14.14.9
+      '@types/node': ^14.14.10
       cheerio: ^1.0.0-rc.3
       rollup: ^2.33.3
   packages/rollup-plugin-postcss:
@@ -53,21 +53,21 @@ importers:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
       clean-css: 4.2.3
       concat-with-sourcemaps: 1.1.0
-      postcss: 8.1.9
+      postcss: 8.1.10
       postcss-modules: 3.2.2
     devDependencies:
       '@intrnl/bundl': 'link:../bundl'
       '@types/clean-css': 4.2.2
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       rollup: 2.33.3
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@rollup/pluginutils': ^4.1.0
       '@types/clean-css': ^4.2.2
-      '@types/node': ^14.14.9
+      '@types/node': ^14.14.10
       clean-css: ^4.2.3
       concat-with-sourcemaps: ^1.1.0
-      postcss: ^8.1.9
+      postcss: ^8.1.10
       postcss-modules: ^3.2.2
       rollup: ^2.33.3
   packages/rollup-plugin-terser:
@@ -77,13 +77,13 @@ importers:
       terser: 5.5.0
     devDependencies:
       '@intrnl/bundl': 'link:../bundl'
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
       '@types/serialize-javascript': 4.0.0
       rollup: 2.33.3
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@intrnl/node-worker-pool': ^0.1.6
-      '@types/node': ^14.14.9
+      '@types/node': ^14.14.10
       '@types/serialize-javascript': ^4.0.0
       rollup: ^2.33.3
       serialize-javascript: ^5.0.1
@@ -140,8 +140,8 @@ packages:
       integrity: sha512-i6rgnR/YgPEQzZZnbTHHuZdlE8qyoBNalD6F+q4vAFlcMEcqmkoG+mPqJYJCo63qPf74+Y1UZsl3l6f7/RIkmA==
   /@intrnl/bundl/0.2.0:
     dependencies:
-      '@intrnl/rollup-plugin-esbuild': 0.5.1_esbuild@0.8.12+rollup@2.33.3
-      esbuild: 0.8.12
+      '@intrnl/rollup-plugin-esbuild': 0.5.1_esbuild@0.8.16+rollup@2.33.3
+      esbuild: 0.8.16
       escalade: 3.1.1
       kleur: 4.1.3
       rollup: 2.33.3
@@ -151,14 +151,14 @@ packages:
       integrity: sha512-YXccUvlMLjP1BBooJ54CAHV1JhletZndKW4NVGhFRDYC8YQUHp1MLhetHv2oxsOrBF0D1d42yG3FWUga9iefKg==
   /@intrnl/node-worker-pool/0.1.6:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: false
     resolution:
       integrity: sha512-YSKTVMYR1GBN3zZgLvN3tOp71rEIwy6Jmq13mWcTj8aGRXSGgugY6Owb5HgqbY1ouZfa9ZUk7cihWitBkvySeA==
-  /@intrnl/rollup-plugin-esbuild/0.5.1_esbuild@0.8.12+rollup@2.33.3:
+  /@intrnl/rollup-plugin-esbuild/0.5.1_esbuild@0.8.16+rollup@2.33.3:
     dependencies:
       '@rollup/pluginutils': 4.1.0_rollup@2.33.3
-      esbuild: 0.8.12
+      esbuild: 0.8.16
       rollup: 2.33.3
     dev: true
     peerDependencies:
@@ -312,13 +312,13 @@ packages:
       integrity: sha512-wv+ttz7wXD/R+IoIuZqdwy4foP3yq986dPVMGTl2N6ipWo5PAHAQ3n6A83efT/K4zQ1h+RibF3k4yr92qu3jNg==
   /@types/cheerio/0.22.22:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: true
     resolution:
       integrity: sha512-05DYX4zU96IBfZFY+t3Mh88nlwSMtmmzSYaQkKN48T495VV1dkHSah6qYyDTN5ngaS0i0VonH37m+RuzSM0YiA==
   /@types/clean-css/4.2.2:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: true
     resolution:
       integrity: sha512-xiTJn3bmDh1lA8c6iVJs4ZhHw+pcmxXlJQXOB6G1oULaak8rmarIeFKI4aTJ7849dEhaO612wgIualZfbxTJwA==
@@ -330,16 +330,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-jnqIUKDUqJbDIUxm0Uj7bnlMnRm1T/eZ9N+AVMqhPgzrba2GhGG5o/jCTwmdPK709nEZsGoMzXEDUjcXHa3W0g==
-  /@types/node/14.14.9:
+  /@types/node/14.14.10:
     resolution:
-      integrity: sha512-JsoLXFppG62tWTklIoO4knA+oDTYsmqWxHRvd4lpmfQRNhX6osheUOWETP2jMoV/2bEHuMra8Pp3Dmo/stBFcw==
+      integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/resolve/1.17.1:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: true
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
@@ -728,11 +728,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Va0Q/xqtrss45hWzP8CZJwzGSZJjDM5/MJRE3IXXnUCcVLElR9BRaE9F62BopysASyc4nM3uwhSW7FFB9nlWAA==
-  /esbuild/0.8.12:
+  /esbuild/0.8.16:
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-SWCUodYFOkKcu2Jbum12NbD98MoQq2EWWvHfQtpR2C9RkPzRr1BE4cavYjQpQV01hBR19UAftXl0TVLjka/i3Q==
+      integrity: sha512-HMvPNxDIhEGO/YUh8oO8oxQ1g+ttWz2anUF7NJmQglj2XfJS8zd8mP0Sb2y+jE1SVk3UjD/rYhdsEOFULN9/xw==
   /escalade/3.1.1:
     engines:
       node: '>=6'
@@ -1050,12 +1050,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-/93sDihsAD652hrMEbJGbMAVBf1qc96kyThHQ0CAOONHaE3aROLpTjDe4WQ5aoC5ITHFxEq1z8XqSU7km+8amw==
-  /is-core-module/2.1.0:
+  /is-core-module/2.2.0:
     dependencies:
       has: 1.0.3
     dev: true
     resolution:
-      integrity: sha512-YcV7BgVMRFRua2FqQzKtTDMz8iCuLEyGKjr70q8Zm1yy2qKcurbFEd79PAdHV77oL3NrAaOVQIbMmiHQCHB7ZA==
+      integrity: sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
   /is-docker/2.1.1:
     dev: true
     engines:
@@ -1375,14 +1375,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
-  /p-limit/3.0.2:
+  /p-limit/3.1.0:
     dependencies:
-      p-try: 2.2.0
+      yocto-queue: 0.1.0
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-iwqZSOoWIW+Ew4kAGUlN16J4M7OB3ysMLSZtnhmqx7njIHFPlxWBX8xo3lVTyFVq6mI/lL9qt2IsN1sHwaxJkg==
+      integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
   /p-locate/4.1.0:
     dependencies:
       p-limit: 2.3.0
@@ -1393,7 +1393,7 @@ packages:
       integrity: sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==
   /p-locate/5.0.0:
     dependencies:
-      p-limit: 3.0.2
+      p-limit: 3.1.0
     dev: true
     engines:
       node: '>=10'
@@ -1451,7 +1451,7 @@ packages:
       integrity: sha512-+mi/lmVVNKFNVyLXV31ERiy2CY5E1/F6QtJFEzoChPRwwngMNXRDQ9GJ5WdE2Z2P4AujsOi0/+2qHID68KwfIQ==
   /parse5/3.0.3:
     dependencies:
-      '@types/node': 14.14.9
+      '@types/node': 14.14.10
     dev: false
     resolution:
       integrity: sha512-rgO9Zg5LLLkfJF9E6CCmXlSE4UVceloys8JrFqCcHloC3usd/kJCyPDwH2SOlzix2j3xaP9sUX3e8+kvkuleAA==
@@ -1607,7 +1607,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
-  /postcss/8.1.9:
+  /postcss/8.1.10:
     dependencies:
       colorette: 1.2.1
       nanoid: 3.1.18
@@ -1617,7 +1617,7 @@ packages:
     engines:
       node: ^10 || ^12 || >=14
     resolution:
-      integrity: sha512-oWuBpEl1meaMKkQXn0ic78TUrgsMvrAZLE/6ZY0H3LTteq2O3L8PGWwMbPLctpksTJIHjQeossMUMNQW7qRIHQ==
+      integrity: sha512-iBXEV5VTTYaRRdxiFYzTtuv2lGMQBExqkZKSzkJe+Fl6rvQrA/49UVGKqB+LG54hpW/TtDBMGds8j33GFNW7pg==
   /preact/10.5.7:
     dev: false
     resolution:
@@ -1675,7 +1675,7 @@ packages:
       integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
   /resolve/1.19.0:
     dependencies:
-      is-core-module: 2.1.0
+      is-core-module: 2.2.0
       path-parse: 1.0.6
     dev: true
     resolution:
@@ -1779,7 +1779,7 @@ packages:
       deepmerge: 4.2.2
       detect-port: 1.3.0
       es-module-lexer: 0.3.26
-      esbuild: 0.8.12
+      esbuild: 0.8.16
       esinstall: 0.3.7
       etag: 1.8.1
       execa: 4.1.0
@@ -2026,3 +2026,9 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-WOkpgNhPTlE73h4VFAFsOnomJVaovO8VqLDzy5saChRBFQFBoMYirowyW+Q9HB4HFF4Z7VZTiG3iSzJJA29yRA==
+  /yocto-queue/0.1.0:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==

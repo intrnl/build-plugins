@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"@intrnl/bundl": "workspace:^0.2.0",
-		"@types/node": "^14.14.9",
+		"@types/node": "^14.14.10",
 		"@types/serialize-javascript": "^4.0.0",
 		"rollup": "^2.33.3"
 	},

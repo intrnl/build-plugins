@@ -32,7 +32,7 @@
 	"devDependencies": {
 		"@intrnl/bundl": "workspace:^0.2.0",
 		"@types/cheerio": "^0.22.22",
-		"@types/node": "^14.14.9",
+		"@types/node": "^14.14.10",
 		"rollup": "^2.33.3"
 	},
 	"bundl": {
