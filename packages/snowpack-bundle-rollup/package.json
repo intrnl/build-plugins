@@ -25,6 +25,7 @@
 	},
 	"dependencies": {
 		"@intrnl/rollup-plugin-html": "workspace:^0.1.2",
+		"@intrnl/rollup-plugin-include": "workspace:^0.1.1",
 		"@intrnl/rollup-plugin-postcss": "workspace:^0.1.2",
 		"@intrnl/rollup-plugin-terser": "workspace:^0.1.2",
 		"cheerio": "^1.0.0-rc.3",

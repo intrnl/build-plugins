@@ -109,6 +109,7 @@ importers:
   packages/snowpack-bundle-rollup:
     dependencies:
       '@intrnl/rollup-plugin-html': 'link:../rollup-plugin-html'
+      '@intrnl/rollup-plugin-include': 'link:../rollup-plugin-include'
       '@intrnl/rollup-plugin-postcss': 'link:../rollup-plugin-postcss'
       '@intrnl/rollup-plugin-terser': 'link:../rollup-plugin-terser'
       cheerio: 1.0.0-rc.3
@@ -120,6 +121,7 @@ importers:
     specifiers:
       '@intrnl/bundl': 'workspace:^0.2.0'
       '@intrnl/rollup-plugin-html': 'workspace:^0.1.2'
+      '@intrnl/rollup-plugin-include': 'workspace:^0.1.1'
       '@intrnl/rollup-plugin-postcss': 'workspace:^0.1.2'
       '@intrnl/rollup-plugin-terser': 'workspace:^0.1.2'
       cheerio: ^1.0.0-rc.3

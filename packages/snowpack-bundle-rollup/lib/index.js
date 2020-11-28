@@ -9,6 +9,7 @@ import { rollup } from 'rollup';
 import { html as htmlPlugin } from '@intrnl/rollup-plugin-html';
 import { terser as terserPlugin } from '@intrnl/rollup-plugin-terser';
 import { postcss as postcssPlugin } from '@intrnl/rollup-plugin-postcss';
+import { include as includePlugin } from '@intrnl/rollup-plugin-include';
 import { rewriteHTMLPlugin } from './plugins/rewrite-html';
 import { proxyResolverPlugin } from './plugins/proxy-resolver';
 import { webModulesChunkPlugin } from './plugins/web-modules-chunk';
@@ -45,6 +46,7 @@ module.exports = function plugin (snowpackConfig, pluginOpts = {}) {
 							modulesDir !== false &&	webModulesChunkPlugin({ buildDirectory, modulesDir }),
 
 							postcssPlugin({ minify, sourcemap: false }),
+							includePlugin({ exclude: /\.html$/i }),
 
 							minify && terserPlugin(),
 

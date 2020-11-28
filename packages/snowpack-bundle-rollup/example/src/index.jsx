@@ -9,3 +9,8 @@ function App () {
 }
 
 render(<App />, document.querySelector('#root'));
+
+let workerUrl = new URL('./worker.js', import.meta.url);
+let worker = new Worker(workerUrl, { type: 'module' });
+
+worker.postMessage('greet');
