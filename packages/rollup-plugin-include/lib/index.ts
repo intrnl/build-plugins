@@ -7,7 +7,7 @@ import type { Plugin } from 'rollup';
 
 import MagicString from 'magic-string';
 import { asyncWalk } from 'estree-walker';
-import type { Node } from 'estree';
+import type { Node, Program } from 'estree';
 
 import { relativeUrlMechanisms } from './url-mechanisms';
 
@@ -31,12 +31,17 @@ export function include (opts: PluginOptions = {}): Plugin {
 		async transform (code, id) {
 			if (!filter(id)) return null;
 
-			let ast = this.parse(code);
+			let ast: Program;
 			let str = new MagicString(code);
-
 			let hasModified = false;
 
-			await asyncWalk(ast, {
+			try {
+				ast = this.parse(code) as any;
+			} catch {
+				return null;
+			}
+
+			await asyncWalk(ast!, {
 				// @ts-ignore
 				enter: async (node: Node) => {
 					if (!(
