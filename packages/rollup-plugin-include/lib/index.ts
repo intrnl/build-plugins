@@ -17,7 +17,7 @@ let filterMap: WeakMap<IncludeRule, ReturnType<CreateFilter>> = new WeakMap();
 let META_PREFIX = 'ROLLUP_PLUGIN_INCLUDE_';
 
 let DEFAULT_RULES: IncludeRule[] = [
-	{ type: 'chunk', include: /\.js$/i },
+	{ type: 'chunk', include: /\.m?js$/i },
 	{ type: 'asset' },
 ];
 
