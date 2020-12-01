@@ -15,6 +15,7 @@
 	"files": [
 		"dist/",
 		"types/",
+		"worker/",
 		"README.md"
 	],
 	"scripts": {
