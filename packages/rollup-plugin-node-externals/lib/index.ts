@@ -8,7 +8,7 @@ import type { Plugin } from 'rollup';
 let relativePathRE = /^\.{0,2}\//;
 
 export function externals (opts: PluginOptions = {}): Plugin {
-	let { external = ['dev'], root = process.cwd() } = opts;
+	let { external = ['regular', 'peer', 'optional'], root = process.cwd() } = opts;
 
 	let pkgPath: null | string = null;
 	let dependencies = new Set<string>();
