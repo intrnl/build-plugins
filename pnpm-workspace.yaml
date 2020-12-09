@@ -3,6 +3,7 @@ packages:
   - packages/rollup-plugin-esbuild
   - packages/rollup-plugin-html
   - packages/rollup-plugin-include
+  - packages/rollup-plugin-node-externals
   - packages/rollup-plugin-postcss
   - packages/rollup-plugin-terser
   - packages/snowpack-bundle-rollup
