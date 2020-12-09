@@ -45,6 +45,10 @@ export function externals (opts: PluginOptions = {}): Plugin {
 		async resolveId (id, importer, opts = {}) {
 			if (relativePathRE.test(id)) return null;
 
+			for (let dep of dependencies) {
+				if (!(id == dep || id.startsWith(dep + '/'))) return null;
+			}
+
 			let externalResolved = await this.resolve(id, pkgPath!, { ...opts, skipSelf: true });
 			if (!externalResolved) return null;
 
