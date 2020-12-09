@@ -11,7 +11,7 @@ export function externals (opts: PluginOptions = {}): Plugin {
 	let { external = ['regular', 'peer', 'optional'], root = process.cwd() } = opts;
 
 	let pkgPath: null | string = null;
-	let dependencies = new Set<string>();
+	let dependencies: string[] = [];
 
 	return {
 		name: 'rollup-plugin-node-externals',
@@ -31,23 +31,24 @@ export function externals (opts: PluginOptions = {}): Plugin {
 			if (external.includes('optional')) keys.push('optionalDependencies');
 			if (external.includes('peer')) keys.push('peerDependencies');
 
+			let set = new Set<string>();
+
 			for (let key of keys) {
 				if (!(key in json)) continue;
 
 				let deps = Object.keys(json[key]);
 
 				for (let dep of deps) {
-					dependencies.add(dep);
+					set.add(dep);
 				}
 			}
+
+			dependencies = Array.from(set);
 		},
 
 		async resolveId (id, importer, opts = {}) {
 			if (relativePathRE.test(id)) return null;
-
-			for (let dep of dependencies) {
-				if (!(id == dep || id.startsWith(dep + '/'))) return null;
-			}
+			if (!dependencies.some((dep) => id == dep || id.startsWith(dep + '/'))) return null;
 
 			let externalResolved = await this.resolve(id, pkgPath!, { ...opts, skipSelf: true });
 			if (!externalResolved) return null;
